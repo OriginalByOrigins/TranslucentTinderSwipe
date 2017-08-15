@@ -9,19 +9,25 @@
 /* Begin PBXBuildFile section */
 		303FB48A1EF2CB6B007FF626 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303FB4891EF2CB6B007FF626 /* AppDelegate.swift */; };
 		303FB48C1EF2CB6B007FF626 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303FB48B1EF2CB6B007FF626 /* ViewController.swift */; };
-		303FB48F1EF2CB6B007FF626 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 303FB48D1EF2CB6B007FF626 /* Main.storyboard */; };
 		303FB4911EF2CB6B007FF626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 303FB4901EF2CB6B007FF626 /* Assets.xcassets */; };
 		303FB4941EF2CB6B007FF626 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 303FB4921EF2CB6B007FF626 /* LaunchScreen.storyboard */; };
+		303FB49C1EF2CE1A007FF626 /* UIVIew+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303FB49B1EF2CE1A007FF626 /* UIVIew+extension.swift */; };
+		3058E4051EF2E8340016CAAA /* VC+setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3058E4041EF2E8330016CAAA /* VC+setup.swift */; };
+		3058E4071EF2E9680016CAAA /* VC+panGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3058E4061EF2E9680016CAAA /* VC+panGesture.swift */; };
+		30CDB4511EF2F6E700AB557E /* Girl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CDB4501EF2F6E700AB557E /* Girl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		303FB4861EF2CB6B007FF626 /* TranslucentTinderSwipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TranslucentTinderSwipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		303FB4891EF2CB6B007FF626 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		303FB48B1EF2CB6B007FF626 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		303FB48E1EF2CB6B007FF626 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		303FB4901EF2CB6B007FF626 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		303FB4931EF2CB6B007FF626 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		303FB4951EF2CB6B007FF626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		303FB49B1EF2CE1A007FF626 /* UIVIew+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIew+extension.swift"; sourceTree = "<group>"; };
+		3058E4041EF2E8330016CAAA /* VC+setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VC+setup.swift"; sourceTree = "<group>"; };
+		3058E4061EF2E9680016CAAA /* VC+panGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VC+panGesture.swift"; sourceTree = "<group>"; };
+		30CDB4501EF2F6E700AB557E /* Girl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Girl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +61,24 @@
 			isa = PBXGroup;
 			children = (
 				303FB4891EF2CB6B007FF626 /* AppDelegate.swift */,
-				303FB48B1EF2CB6B007FF626 /* ViewController.swift */,
-				303FB48D1EF2CB6B007FF626 /* Main.storyboard */,
+				303FB49B1EF2CE1A007FF626 /* UIVIew+extension.swift */,
+				30CDB4501EF2F6E700AB557E /* Girl.swift */,
+				3058E4031EF2E80D0016CAAA /* ViewController */,
 				303FB4901EF2CB6B007FF626 /* Assets.xcassets */,
 				303FB4921EF2CB6B007FF626 /* LaunchScreen.storyboard */,
 				303FB4951EF2CB6B007FF626 /* Info.plist */,
 			);
 			path = TranslucentTinderSwipe;
+			sourceTree = "<group>";
+		};
+		3058E4031EF2E80D0016CAAA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				303FB48B1EF2CB6B007FF626 /* ViewController.swift */,
+				3058E4041EF2E8330016CAAA /* VC+setup.swift */,
+				3058E4061EF2E9680016CAAA /* VC+panGesture.swift */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +141,6 @@
 			files = (
 				303FB4941EF2CB6B007FF626 /* LaunchScreen.storyboard in Resources */,
 				303FB4911EF2CB6B007FF626 /* Assets.xcassets in Resources */,
-				303FB48F1EF2CB6B007FF626 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,21 +152,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				303FB48C1EF2CB6B007FF626 /* ViewController.swift in Sources */,
+				3058E4071EF2E9680016CAAA /* VC+panGesture.swift in Sources */,
 				303FB48A1EF2CB6B007FF626 /* AppDelegate.swift in Sources */,
+				3058E4051EF2E8340016CAAA /* VC+setup.swift in Sources */,
+				303FB49C1EF2CE1A007FF626 /* UIVIew+extension.swift in Sources */,
+				30CDB4511EF2F6E700AB557E /* Girl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		303FB48D1EF2CB6B007FF626 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				303FB48E1EF2CB6B007FF626 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		303FB4921EF2CB6B007FF626 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -269,13 +281,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 78DY2XFN75;
+				DEVELOPMENT_TEAM = 2MRG3U4CR7;
 				INFOPLIST_FILE = TranslucentTinderSwipe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HarryCodes.TranslucentTinderSwipe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -283,13 +295,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 78DY2XFN75;
+				DEVELOPMENT_TEAM = 2MRG3U4CR7;
 				INFOPLIST_FILE = TranslucentTinderSwipe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HarryCodes.TranslucentTinderSwipe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -312,6 +324,7 @@
 				303FB49A1EF2CB6B007FF626 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
